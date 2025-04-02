@@ -1,0 +1,93 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    width: 0vw;
+    height: 0vh;
+    margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+
+/*Variables usuario*/
+
+$rojo_claro: rgba(255, 0, 0, 1);
+$rojo_oscuro: rgba(86, 0, 0, 1);
+$gris: rgb(97, 97, 97);
+$oscuro: rgba(53, 53, 53, 1);
+$claro: rgb(255, 255, 255);
+$azul_claro: rgb(0, 204, 231);
+$azul_oscuro: rgb(0, 82, 93);
+$amarillo_llama:rgba(255, 199, 0, 1);
+$azul_llama: rgba(0, 35, 61, 1);
+$naranja_llama: rgba(255, 92, 0, 1);
+$azul_claro_rc: rgba(0, 194, 255, 1);
+$azul_oscuro_rc: rgba(1, 0, 50, 1);
+
+.container_recuperar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(rgba(0, 31, 189, 0.656), rgb(0, 188, 221));
+    width: 98vw;
+    height: auto;
+
+    .Form{
+        border: 1px solid #eee;
+        width: 50%;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border: 1px solid #eee;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px 1px rgba(255, 255, 255, 0.278);
+        margin: 10vh auto;
+
+        label{
+            width: 90%;
+            height: 10vh;
+            font-size: 25px;
+        }
+        input{
+            width: 80%;
+            height: 10vh;
+            border-radius: 15px;
+            border-style: none;
+            font-size: 35px;
+        }
+        .Enviar{
+            width: 50%;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            background: linear-gradient(90deg,black,$gris);
+            justify-content: center;
+            color: white;
+            font-size: 21px;
+            border-style: none;
+            border-radius: 15px;
+        }
+    }
+
+    .imagen_recuperar{
+        width: 35%;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(220deg);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

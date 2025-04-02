@@ -1,0 +1,144 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    width: 0vw;
+    height: 0vh;
+    margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+
+$rojo_claro: rgba(255, 0, 0, 1);
+$rojo_oscuro: rgba(86, 0, 0, 1);
+$gris: rgb(97, 97, 97);
+$oscuro: rgb(26, 26, 26);
+$claro: rgb(255, 255, 255);
+$azul_claro: hsl(194, 100%, 50%);
+$azul_oscuro: rgb(0, 82, 93);
+$amarillo_llama:rgba(255, 199, 0, 1);
+$azul_llama: rgba(0, 35, 61, 1);
+$naranja_llama: rgba(255, 92, 0, 1);
+$azul_claro_rc: rgba(0, 194, 255, 1);
+$azul_oscuro_rc: rgba(1, 0, 50, 1);
+$purpura: hsl(241, 72%, 65%);
+ 
+.configuraciones_g{ 
+    //Width correcto sin labarra de desplazamiento de la pagina
+    //:D
+    width: calc(100vw - 17px);
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    //Para centrar cosas en un body
+    //Container
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient($purpura,$claro);
+    .body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    margin:5vh  auto;
+      .target{
+        width: 50%;
+        height: 90%;
+        background: linear-gradient($purpura,$oscuro);
+        margin: auto;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .datos{
+            width: 45%;
+            height: 90%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-right: 1px solid #eee;
+            margin: auto;
+            p{
+                display: flex;
+                flex-direction: row;
+                width: 90%;
+                height: auto;
+                color: white;
+                margin: auto;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+
+            }
+            button{
+                width: 90%;
+                height: auto;
+                margin: 0 auto;
+                border-radius: 15px;
+                border-style: none;
+                background: $purpura;
+                color: white;
+            }
+        }
+        .imagen{
+            width: 40%;
+            height: 80%;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: auto;
+        img{
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            border-radius: 20px;
+        }
+
+        }
+    }
+
+    .pago{
+        width: 30%;
+        height: 90%;
+        background: linear-gradient($purpura,$oscuro);
+        margin: auto;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        img{
+            width: 50%;
+            height: 50%;
+            margin: auto;
+        }
+        p{
+            display: flex;
+            flex-direction: row;
+
+            width: 90%;
+            height: 15%;
+            font-size: 15px;
+            margin: auto;
+            color: $claro;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .boton{
+            width: 90%;
+            height: 15%;
+            font-size: 15px;
+            margin: auto;
+            color: $claro;
+            background: $purpura;
+            border-radius: 15px;
+            border-style: none;
+        }
+    }
+
+    }
+}

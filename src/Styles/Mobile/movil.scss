@@ -1,0 +1,1118 @@
+//Fuentes
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    width: 0vw;
+    height: 0vh;
+    margin: 0;
+}
+
+//Variables usuario
+$rojo_claro: rgba(255, 0, 0, 1);
+$rojo_oscuro: rgba(86, 0, 0, 1);
+$gris: rgb(97, 97, 97);
+$oscuro: rgba(53, 53, 53, 1);
+$claro: rgb(255, 255, 255);
+$azul_claro: rgb(0, 204, 231);
+$azul_oscuro: rgb(0, 82, 93);
+$amarillo_llama:rgba(255, 199, 0, 1);
+$azul_llama: rgba(0, 35, 61, 1);
+$naranja_llama: rgba(255, 92, 0, 1);
+$azul_claro_rc: rgba(0, 194, 255, 1);
+$azul_oscuro_rc: rgba(1, 0, 50, 1);
+
+.app{
+
+    width: 100vw;
+    //Inicio
+    .inicio{
+        width: 100vw;
+        height: 100vh;
+
+        background: linear-gradient($gris,$oscuro);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+
+
+        .logo{
+            width: 200px;
+            height: 200px;
+            margin: 5% auto;
+            border-radius: 100%;
+            border: 2px solid $rojo_claro;
+            box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+            img{
+                margin: none;
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+        .title{
+            display: flex;
+            border-bottom: 2px solid red;
+            margin: 0 auto;
+            justify-content: center;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+            font-size: 20px;
+            width: 50vw;
+            height: auto;
+        }
+        .sesion{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            height: 50%;
+            margin: auto;
+            border-radius: 15px;
+            background: linear-gradient($rojo_claro,$rojo_oscuro);
+            p{
+                display: flex;
+                align-items: center;
+                text-align: left;
+                font-family: "Montserrat", sans-serif;
+
+                margin: 1% auto;
+                width: 90%;
+                height: 10%;
+                vertical-align: middle;
+            }
+            
+            input{
+                margin: 1% auto;
+                width: 90%;
+                height: 10%;
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 10px;
+            }
+            button{
+                width: 90%;
+                background: rgb(255, 153, 0);
+                border: none;
+                color: white;
+                height: 15%;
+                box-shadow: 10px ;
+                margin: 1% auto;
+                border-radius: 10px;
+                
+            }
+        }
+
+    }
+    
+    //Mesas
+    .mesas{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        background: linear-gradient($gris,$oscuro);
+        .titulo{
+            color:white;
+
+            flex-direction: row;
+            text-align: center;
+            width: 90%;
+            height: 10%;
+            margin: 5% auto;
+            font-family: "Monserrat", sans-serif;
+            font-size: larger;
+        }
+        .select{
+            width: 80vw;
+            height: 7vh;
+            border-radius: 5px;
+            margin: auto;
+            flex-direction: row-reverse;
+            position: relative;
+            color: $rojo_claro;
+            background: linear-gradient();
+            option{
+                font-family: "Monserrat", sans-serif;
+                background: $oscuro;
+                color: white;
+            }
+        }
+        .mesas{
+
+            width: 100%;
+            margin: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .tarjeta{
+                border: 1px solid white;
+                border-radius: 10px;
+                color:white;
+                width: 40%;
+                height: 30vh;
+                font-family: "Monserrat", sans-serif;
+                margin: 4%;
+                display: flex;
+                flex-direction: column;
+                .image{
+                    width: 80%;
+                    height: 70%;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .name{
+                    margin: auto;
+                    width: 80%;
+                    height: 10%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    
+    // Estilos base para pantallas pequeñas
+    .mesa {
+    background: linear-gradient($gris, $oscuro);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+
+    .image {
+        width: 100%;
+        height: 70vw;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .menu {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+
+        .titulo {
+            width: 100%;
+            height: 50%;
+            color: white;
+            display: flex;
+            margin: auto;
+
+            p {
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 90%;
+                height: 20%;
+                text-align: center ;
+                align-items: center;
+                font-size: larger;
+            }
+        }
+
+        .plazas {
+            width: 90%;
+            margin: auto;
+            height: 10vh;
+        }
+
+        .pagar {
+            margin: 1vh auto;
+            width: 90%;
+            height: 10vh;
+            color: white;
+            background: linear-gradient($rojo_claro, $rojo_oscuro);
+            border: 1px solid $rojo_oscuro;
+            border-radius: 10px;
+        }
+    }
+    }
+
+    //Pagina pago
+    .pago{
+        width: 100vw;
+        height: auto;
+        border: 1px solid black;
+        background: linear-gradient($gris, $oscuro); /* Aplicar gradiente solo al contenedor principal */
+        color: $claro;
+        align-items: center;
+        .title{
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: "Monserrat",sans-serif;
+            background-color: transparent; /* Establecer un fondo transparente */
+        }
+        .mesa{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 30vh;
+            color: rgb(255, 255, 255);
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0); /* Fondo sólido transparente para evitar que el gradiente se repita */
+            img{
+                width: 35%;
+                height: 80%;
+                margin: auto;
+            }
+            .datos{
+                width: 50%;
+                height: 70%;
+                margin: auto;
+                text-align: start;
+                justify-content: space-between;
+                li{
+                    margin: auto;
+                    width: 100%;
+                    
+                    height: 15%;
+                }
+            }
+        }
+        .metodos{
+            border: 1px solid red;
+            width: 100%;
+
+            height: 45vh;
+            background-color: rgba(0, 0, 0, 0); /* Fondo sólido transparente para evitar que el gradiente se repita */
+            .opciones_pago{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 95%;
+                height: auto;
+                margin: auto;
+                border-radius: 10px;
+                background: $claro;
+                .item{
+                    width: 30%;
+
+                    height: 15vh;
+                    margin: 2.5% auto;
+                    border: 1px solid red;
+                    display: flex;
+                    .check{
+                        width: 15%;
+                        height: 15%;
+                        margin: auto 1%;
+                        border-radius: 100vb;
+                        border: 1px solid red;
+                    }
+                    .logo{
+                        width: 80%;
+                        height: 90%;
+                        margin: auto;
+                        border: 1px solid rgb(6, 255, 226);
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .areaPago{
+            width: 100%;
+            height: 15vh;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            .boton_pago{
+                width: 50%;
+                height: 90%;
+                margin: auto;
+                border-radius: 15px;
+                color: white;
+                background: linear-gradient($rojo_claro,$rojo_oscuro);
+                border: none;
+                font-family: "Monserrat",sans-serif;
+                font-size: larger;
+            }
+        }
+    }
+
+    //Pagina configuraciones
+    .ajustes{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient($gris,$oscuro);
+        display: flex;
+        flex-direction: column;
+        .lista{    
+            background-image: url("https://i.ibb.co/Qn9gJLj/liston.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            color: $claro;
+            height: 80vh;
+            margin: auto;
+            margin-top: 0;
+            li{
+                display: flex;
+                justify-content: center; /* Centrado horizontal */
+                align-items: center;
+                width: 100%;
+                height: 15%;
+                list-style-type: none;
+                border-bottom: 1px solid $claro;
+                font-family: "Monserrat",sans-serif;
+                font-size: 20px;
+            }
+        }
+        .nav_foot{
+            width: 100%;
+            height: 10vh;
+            color: $claro;
+            font-family: "Monserrat",sans-serif;
+            display: flex;
+            flex-direction: row;
+            border-top: 2px solid white;
+            .bar{
+                width: 2px;
+                height: 100%;
+                background: $claro;
+            }
+            .item{
+                width: 15%;
+                margin: auto;
+                height: 90%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: small;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
+    }
+
+
+    //Pagina Perfil
+    .perfil{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient($gris,$oscuro);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .header{
+            width: 100%;
+            height: 90vh;
+            background: linear-gradient($rojo_claro,$rojo_oscuro);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .profile{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 55%;
+                    height: 75%;
+                    margin: auto;
+                }
+                .titulo{
+                    color: $claro;
+                    border-bottom: 1px solid white;
+                    font-size: large;
+                    font-family: 'Monserrat', sans-serif;
+                    margin: auto;
+                    width: 70%;
+                    height: 10%;
+                    text-align: center;
+                    display: flex;
+
+                    flex-direction: column;
+                    margin-top: 3px;
+                }
+            }
+
+            .mesas{
+                width: 49%;
+                height: 50%;
+                border-top: 3px solid $claro;
+                display: flex;
+                flex-direction: column;
+                background: transparent;
+                .img{
+                    width: 75%;
+                    height: 50%;
+                    margin: auto;
+                }
+                .titulo{
+                    width: 100%;
+                    height: 10%;
+                    margin: auto;
+                    margin-top: 1%;
+                }
+            }
+            .linea{
+                width: 1%;
+                height: 50%;
+                background: $claro;
+            }
+            .penalizaciones{
+                border-top: 3px solid $claro;
+                display: flex;
+                flex-direction: column;
+                width: 49%;
+                height: 50%;
+                color: white;
+                color: $claro;
+                font-family: "Monserrat", sans-serif;
+                justify-content: center;
+                text-align: center; 
+                align-items: center;
+                background: transparent;
+                margin: auto;
+                .img{
+                    width: 75%;
+                    height: 50%;
+                    margin: auto;
+                }
+                .titulo{
+                    width: 100%;
+                    height: 10%;
+                    margin: auto;
+                    margin-top: 1%;
+                }
+            }
+        }
+        .nav_foot{
+            width: 100%;
+            height: 10vh;
+            color: $claro;
+            font-family: "Monserrat",sans-serif;
+            display: flex;
+            flex-direction: row;
+            .bar{
+                width: 2px;
+                height: 100%;
+                background: $claro;
+            }
+            .item{
+                width: 15%;
+                margin: auto;
+                height: 90%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: small;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+        }
+    }
+
+
+    //Pagina principal
+    .menu{
+        width: 100%;
+        height: auto;
+        padding-bottom: 15vh;
+        background: linear-gradient($rojo_claro,$rojo_oscuro);
+        .header{
+            width: 100%;
+            height: 15vh;
+            color: $claro;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            button{
+                color: $claro;
+                width: 50%;
+                height: 90%;
+                margin: auto;
+                background: none;
+                border: none;
+                &:hover{
+                    background: rgba(255, 255, 255, 0.238);
+                }
+            }
+            .sep{
+                width: 2px;
+                height: 90%;
+                background-color: $claro;
+                margin: auto;
+            }
+        }
+
+
+        .body{
+            width: 100%;
+            margin: auto;
+            height: auto;
+            .target{
+                margin-top: 1vh;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 15vh;
+                background: linear-gradient($gris,$oscuro);
+                
+                img{
+                    width: 35%;
+                    height: 100%;
+                    margin: auto;
+                    margin-left: 0;
+                }
+                .contenido{
+                    width: 50%;
+                    height: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: auto;
+                    text-align: left;
+                    font-family: "Monserrat",sans-serif;
+                    color: $claro;
+                    text-align: justify;
+                    justify-content: space-around;
+                }
+            }
+
+        }
+        .nav_foot{
+            width: 100%;
+            height: 10vh;
+            color: $claro;
+            font-family: "Monserrat",sans-serif;
+            display: flex;
+            flex-direction: row;
+            background:linear-gradient($gris,$oscuro);
+            .bar{
+                width: 2px;
+                height: 100%;
+                background: $claro;
+            }
+            .item{
+                width: 15%;
+                margin: auto;
+                height: 90%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: small;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+            position: fixed; /* Fijamos la posición del menú */
+            bottom: 0; /* Lo colocamos en la parte superior */
+            left: 0; /* Lo colocamos en la parte izquierda */
+            width: 100%; /* Ancho completo */
+            background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+            z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+            /* Agrega aquí más estilos según tus necesidades */
+          }
+    }
+
+    //Pagina editar o cancelar mesa
+    .mesa_pagina{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient($rojo_claro,$rojo_oscuro);
+
+        .body{
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+            flex-wrap: wrap;
+            padding-bottom: 10vh;
+            font-family: "Monserrat",sans-serif;
+            .mesa{
+                width: 70%;
+                height: 30%;
+                margin: auto;
+                background: transparent;
+            }
+            .title{
+                width: 80%;
+                height: 10%;
+                text-align: center;
+                color: $claro;
+                margin: auto;
+            }
+
+            .editar{
+                width: 80%;
+                height: 10%;
+                margin: auto;
+                background: linear-gradient($azul_claro,$azul_oscuro);
+                border: none;
+                border-radius: 15px;
+                color: $claro;
+                font-size: larger;
+            }
+
+            .cancelar{
+                width: 80%;
+                height: 10%;
+                margin: auto;
+                border: none;
+                background:linear-gradient($rojo_claro,$rojo_oscuro);
+                border-radius: 15px;
+                color: $claro;
+
+                font-size: larger;
+            }
+        }
+        
+        .nav_foot{
+            width: 100vw;
+            height: 10vh;
+            color: $claro;
+            font-family: "Monserrat",sans-serif;
+            display: flex;
+            flex-direction: row;
+            background:linear-gradient($gris,$oscuro);
+            .bar{
+                width: 2px;
+                height: 100%;
+                background: $claro;
+            }
+            .item{
+                width: 15%;
+                margin: auto;
+                height: 90%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: small;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+            position: fixed; /* Fijamos la posición del menú */
+            bottom: 0; /* Lo colocamos en la parte inferior*/
+            left: 0; /* Lo colocamos en la parte izquierda */
+            width: 100%; /* Ancho completo */
+            background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+            z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+            /* Agrega aquí más estilos según tus necesidades */
+        }
+
+    }
+
+    //Pagina libres a ultima hora
+    .ultima_hora{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient($amarillo_llama 4%, $naranja_llama 40%, $azul_llama 90%);
+        .header{
+            width: 100%;
+            height: 10vh;
+            text-align: center;
+            vertical-align: center;
+            background: rgba(0, 0, 0, 0.271);
+
+            color: $claro;
+        }
+        .body{
+            width: 100%;
+            height: auto;
+            margin-bottom: 10vh;
+            .table_target{
+                width: 100vw;
+                height: 15vh;
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                border-bottom: 1px dotted $claro;
+                background: rgba(0, 0, 0, 0.271);
+                .imagen{
+                    width: 25%;
+                    height: 90%;
+                    margin: auto;
+                }
+                .info{
+                    margin: auto;
+                    width: 70%;
+                    height: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    justify-content: space-around;
+                    color: $claro;
+                    font-family: "Monserrat",sans-serif;
+                    font-size: small;
+                    .reserva{
+                        margin: auto;
+                        width: 80%;
+                        height: 30%;
+                        color: $claro;
+    
+                        background: $naranja_llama;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        .nav_foot{
+            width: 100vw;
+            height: 10vh;
+            color: $claro;
+            font-family: "Monserrat",sans-serif;
+            display: flex;
+            flex-direction: row;
+            background:linear-gradient($gris,$oscuro);
+            .bar{
+                width: 2px;
+                height: 100%;
+                background: $claro;
+            }
+            .item{
+                width: 15%;
+                margin: auto;
+                height: 90%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: small;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+            position: fixed; /* Fijamos la posición del menú */
+            bottom: 0; /* Lo colocamos en la parte inferior*/
+            left: 0; /* Lo colocamos en la parte izquierda */
+            width: 100%; /* Ancho completo */
+            background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+            z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+            /* Agrega aquí más estilos según tus necesidades */
+        }
+    }
+
+    /*Pagina penalizaciones*/
+    .penalizaciones{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient($rojo_claro,$rojo_oscuro);
+        color: white;
+        font-family: "Monserrat","sans-serif";
+        .header{
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            color: $claro;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            border-bottom: 1px solid $claro;
+        }
+        .body{
+            width: 100%;
+            height: auto;
+            margin: 1% auto;
+            margin-bottom: 10vh;
+            .Target{
+                width: 100%;
+                height: 15vh;
+                display: flex;
+
+                flex-direction: row;
+                border-bottom: 1px solid $claro;
+                .logo{
+                    width: 25%;
+                    height: 90%;
+                    margin: auto;
+                }
+                .info{
+                    width: 70%;
+                    height: 90%;
+                    margin: auto;
+                }
+            }
+        }        
+
+        .nav_foot{
+            width: 100vw;
+            height: 10vh;
+            color: $claro;
+            font-family: "Monserrat",sans-serif;
+            display: flex;
+            flex-direction: row;
+            background:linear-gradient($gris,$oscuro);
+            .bar{
+                width: 2px;
+                height: 100%;
+                background: $claro;
+            }
+            .item{
+                width: 15%;
+                margin: auto;
+                height: 90%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: small;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+            position: fixed; /* Fijamos la posición del menú */
+            bottom: 0; /* Lo colocamos en la parte inferior*/
+            left: 0; /* Lo colocamos en la parte izquierda */
+            width: 100%; /* Ancho completo */
+            background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+            z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+            /* Agrega aquí más estilos según tus necesidades */
+        }
+    }
+
+    //* Recepcionista */
+
+    //Inicio
+    .inicio_rc{
+        width: 100vw;
+        height: 100vh;
+
+        background: linear-gradient($azul_claro_rc,$azul_oscuro_rc);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+
+
+        .logo{
+            width: 200px;
+            height: 200px;
+            margin: 5% auto;
+            border-radius: 100%;
+            border: 2px solid $azul_claro_rc;
+            //box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+            img{
+                margin: none;
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+        .title{
+            display: flex;
+            border-bottom: 2px solid $azul_claro_rc;
+            margin: 0 auto;
+            justify-content: center;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+            font-size: 20px;
+            width: 50vw;
+            height: auto;
+        }
+        .sesion{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            height: 50%;
+            margin: auto;
+            border-radius: 15px;
+            background: linear-gradient($azul_claro_rc,transparent);
+            p{
+                display: flex;
+                align-items: center;
+                text-align: left;
+                font-family: "Montserrat", sans-serif;
+
+                margin: 1% auto;
+                width: 90%;
+                height: 10%;
+                vertical-align: middle;
+            }
+            
+            input{
+                margin: 1% auto;
+                width: 90%;
+                height: 10%;
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 10px;
+            }
+            button{
+                width: 90%;
+                background: $azul_claro;
+                border: none;
+                color: white;
+                height: 15%;
+                box-shadow: 10px ;
+                margin: 1% auto;
+                border-radius: 10px;
+                
+            }
+        }
+
+    }
+
+    //Mesas recepcionista
+    .mesas_rc{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient($azul_claro_rc, $azul_oscuro_rc);
+        align-items: center;
+        display: flex;
+        .body{
+            display: flex;
+            width: 85vw;
+            height: 80vh;
+
+            flex-wrap: wrap;
+            padding-bottom: 10vh;
+            font-family: "Monserrat",sans-serif;
+            margin: auto;
+            background: linear-gradient($azul_claro,#00000000);
+            border-radius: 2ch;
+            .mesa{
+                
+                width: 65%;
+                height: 30%;
+                margin: auto;
+                background: transparent;
+                background: linear-gradient($azul_claro_rc, #00000000);
+            }
+            .title{
+                width: 80%;
+                height: 10%;
+                text-align: center;
+                color: $claro;
+                margin: auto;
+            }
+
+            .editar{
+                width: 80%;
+                height: 10%;
+                margin: auto;
+                background: linear-gradient($azul_claro,$azul_oscuro);
+                border: none;
+                border-radius: 15px;
+                color: $claro;
+                font-size: larger;
+            } 
+
+            .cancelar{
+                width: 80%;
+                height: 10%;
+                margin: auto;
+                border: none;
+                background:linear-gradient($rojo_claro,$rojo_oscuro);
+                border-radius: 15px;
+                color: $claro;
+
+                font-size: larger;
+            }
+        }
+        
+        .nav_foot{
+            width: 100vw;
+            height: 10vh;
+            color: $claro;
+            font-family: "Monserrat",sans-serif;
+            display: flex;
+            flex-direction: row;
+            background:linear-gradient($gris,$oscuro);
+            .bar{
+                width: 2px;
+                height: 100%;
+                background: $claro;
+            }
+            .item{
+                width: 15%;
+                margin: auto;
+                height: 90%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: small;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+            position: fixed; /* Fijamos la posición del menú */
+            bottom: 0; /* Lo colocamos en la parte inferior*/
+            left: 0; /* Lo colocamos en la parte izquierda */
+            width: 100%; /* Ancho completo */
+            background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+            z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+            /* Agrega aquí más estilos según tus necesidades */
+        }
+    }
+
+    //Menu recepcionia
+    
+    /* Ancho del pc */
+    @media (min-width: 910px) {
+        
+        
+        .mesa {
+
+        height: auto;
+        display: flex;
+        flex-direction: row;
+
+        .image {
+            display: flex;
+            width: 50%;
+            margin: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                margin: auto ;
+            }
+        }
+
+        .menu {
+            width: 50%;
+            height: 80vh;
+            margin: auto;
+            .titulo{
+                margin: auto;
+            }
+            .plazas{
+                margin: auto;
+            }
+            .pagar{
+                margin: auto;
+            }
+        }
+        }    
+    }
+}

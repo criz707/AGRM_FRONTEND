@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  width: 0vw;
+  height: 0vh;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+@font-face {
+  font-family: "Inter";
+  src: url("/path-to-font/inter.woff2") format("woff2"), url("/path-to-font/inter.woff") format("woff");
+  font-weight: 400; /* O ajusta según las variantes disponibles */
+  font-style: normal;
+}
+.Mesas {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: linear-gradient(rgb(245, 192, 0), rgb(255, 92, 0), rgb(1, 0, 50));
+  opacity: 1;
+  font-family: "Inter", sans-serif;
+}
+.Mesas .Navbar {
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  width: 33%;
+  background: linear-gradient(rgb(97, 97, 97), rgb(36, 36, 36));
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+}
+.Mesas .Navbar .item {
+  width: 33%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: background-color 1s, color 1s;
+}
+.Mesas .Navbar .item img {
+  width: 40%;
+  height: 60%;
+  filter: invert(1);
+  margin: auto;
+}
+.Mesas .Navbar .item p {
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  height: 10%;
+  margin: auto;
+}
+.Mesas .Navbar .item:hover {
+  background: rgba(255, 255, 255, 0.896);
+  color: rgb(36, 36, 36);
+}
+.Mesas .Navbar .item:hover img {
+  filter: none;
+}
+.Mesas .Navbar .item:hover p {
+  color: rgb(36, 36, 36);
+}
+.Mesas .titulo {
+  border-bottom: 2px solid #eee;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  width: 50%;
+  height: 10vh;
+  margin: 2vh auto;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.Mesas .Seccion_mesas {
+  width: 95vw;
+  height: auto;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 2px solid white;
+  border-bottom: 2px solid #eee;
+}
+.Mesas .Seccion_mesas .Tarjeta {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 60vh;
+  margin: 2vh auto;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.Mesas .Seccion_mesas .Tarjeta .Imagen {
+  width: 90%;
+  height: 50%;
+  border-radius: 15px;
+  margin: auto;
+  overflow: hidden;
+}
+.Mesas .Seccion_mesas .Tarjeta .Imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Mesas .Seccion_mesas .Tarjeta .Nombre {
+  width: 90%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  border-top: 1px solid #eee;
+}
+.Mesas .Seccion_mesas .Tarjeta .Reserva_ultima {
+  width: 80%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 35, 61);
+  color: white;
+  margin: auto;
+  font-size: large;
+  border-style: none;
+  border-radius: 15px;
+  border: 1px solid #eee;
+}
+
+/*# sourceMappingURL=Ultima_hora.css.map */

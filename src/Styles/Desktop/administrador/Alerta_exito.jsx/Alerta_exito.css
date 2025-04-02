@@ -1,0 +1,57 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  width: 0vw;
+  height: 0vh;
+  margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+.editar_perfil {
+  width: calc(100vw - 17px);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(255, 255, 255));
+}
+.editar_perfil .body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.editar_perfil .body .target {
+  width: 80%;
+  height: 100vh;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(26, 26, 26));
+  margin: 10vh auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.editar_perfil .body .target img {
+  width: 50%;
+  height: 70%;
+  margin: auto;
+}
+.editar_perfil .body .target p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 10%;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=Alerta_exito.css.map */

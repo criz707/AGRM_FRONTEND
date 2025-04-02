@@ -1,0 +1,169 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    width: 0vw;
+    height: 0vh;
+    margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+
+/*Variables usuario*/
+$rojo_claro: rgba(255, 0, 0, 1);
+$rojo_oscuro: rgba(86, 0, 0, 1);
+$gris: rgb(97, 97, 97);
+$oscuro: rgba(53, 53, 53, 1);
+$claro: rgb(255, 255, 255);
+$azul_claro: rgb(0, 204, 231);
+$azul_oscuro: rgb(0, 82, 93);
+$amarillo_llama:rgba(255, 199, 0, 1);
+$azul_llama: rgba(0, 35, 61, 1);
+$naranja_llama: rgba(255, 92, 0, 1);
+$azul_claro_rc: rgba(0, 194, 255, 1);
+$azul_oscuro_rc: rgba(1, 0, 50, 1);
+
+.reserva_ultima{
+    width: calc(100vw - 17px);
+    min-height: 100vh;
+    height: auto;
+
+    background: linear-gradient($amarillo_llama,$naranja_llama,$azul_oscuro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Inter", sans-serif;
+
+    .body{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        color: $claro;
+        margin: 10vh auto;
+        border-radius: 15px;
+        background: linear-gradient($naranja_llama,$rojo_claro);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        .header{
+            width: 90%;
+            height: 20vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5vh auto;
+            .tiempo{
+                width: 30%;
+                height: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: larger;
+            }
+            .numero_mesa{
+                width: 20%;
+                height: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 30px;
+            }
+    
+        }
+
+        .plazas{
+            width: 45%;
+            height: auto;
+            margin: 10vh auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background: $rojo_oscuro;
+            border-radius: 15px;
+            .circle{
+                width: 5vh;
+                height: 5vh;
+                border-radius: 100%;
+                background: $claro;
+                margin: 5vh auto;
+            }
+            .titulo{
+                width: 70%;
+                height: 10%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 5vh auto;
+                font-size: 35px;
+            }
+
+            select{
+                width: 90%;
+                height: 10vh;
+                margin: auto;
+                border: 1px solid #eee;
+                background: $oscuro;
+                color: $claro;
+                border-radius: 15px;
+                margin: 5vh auto;
+                select{
+                    border: 2px solid $gris;
+                }
+                .ok_option{
+                    color: $azul_claro;
+                }
+                .no_option{
+                    color: $rojo_claro;
+                }
+            }
+        }
+        .imagen{
+            width: 50%;
+            height: 90vh;
+            margin: 10vh auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5vh auto;
+            flex-wrap: wrap;
+            img{
+                width: 100%;
+                height: 70%;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                margin: 1% auto;
+            }
+
+            .confirmar{
+                width: 70%;
+                height: 10%;
+                margin: 1% auto;
+                background: $azul_oscuro_rc;
+                color: white;
+                font-size: 25px;
+                border-radius: 15px;
+                border-style: none;
+            }
+
+            .liberar{
+                width: 70%;
+                height: 10%;
+                margin: 1% auto;
+                background: $rojo_claro;
+                color: white;
+                font-size: 25px;
+                border-radius: 15px;
+                border-style: none;
+            }
+        }
+    }
+}
+

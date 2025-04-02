@@ -1,0 +1,233 @@
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    width: 0vw;
+    height: 0vh;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+//Variables usuario
+$rojo_claro: rgba(255, 0, 0, 1);
+$rojo_oscuro: rgba(86, 0, 0, 1);
+$gris: rgb(97, 97, 97);
+$oscuro: rgb(36, 36, 36);
+$claro: rgb(255, 255, 255);
+$claro_transparente: rgba(255, 255, 255, 0.896);
+$amarillo_llama:rgba(255, 199, 0, 1);
+$azul_llama: rgba(0, 35, 61, 1);
+$naranja_llama: rgba(255, 92, 0, 1);
+$azul_claro: rgba(0, 194, 255, 1);
+$azul_oscuro: rgba(1, 0, 50, 1);
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/path-to-font/inter.woff2') format('woff2'),
+         url('/path-to-font/inter.woff') format('woff');
+    font-weight: 400; /* O ajusta según las variantes disponibles */
+    font-style: normal;
+  }
+  
+
+.mesas_recepcion{
+    
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient($azul_claro ,$azul_llama ,$azul_oscuro );
+    opacity: 1;
+    font-family: "Inter", sans-serif;
+
+    //Menu de navegaciondel perfil
+    .Navbar{
+        display: flex;
+        flex-direction: row;
+        height: 15vh;
+        width: 33%;
+        background: linear-gradient($gris,$oscuro);
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        
+        .item{
+            width: 33%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            transition: background-color 1s, color 1s;
+            img{
+                width: 40%;
+                height: 60%;
+                filter: invert(1);
+                margin: auto;
+            }
+            p{
+                font-size: 11px;
+                color: $claro;
+                width: 80%;
+                height: 10%;
+                margin: auto;
+            }
+        }
+
+        .item:hover{
+            background: $claro_transparente;
+            color: $oscuro;
+            img{
+                filter: none;
+            }
+            p{
+                color: $oscuro;
+            }
+        }
+    }
+
+    //Titulo de la pagina
+    .titulo{
+        border-bottom:2px solid #eee;
+        color: $claro;
+        font-size: 20px;
+        width: 80%;
+        height: 10vh;
+        margin: 2vh auto;
+        display:flex ;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    //Header de las fechas
+
+    .Header{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 15vh;
+        margin: 2vh auto;
+        border: 1px solid #eee;
+        justify-content: space-around;
+        border-radius: 15px;
+        background: $azul_oscuro;
+        .imagen{
+            width: 8%;
+            height: 80%;
+            filter: invert(1);
+            margin: auto;
+            
+        }
+        .Fecha{
+            width: 80%;
+            height: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            text-align: center;
+            background: $azul_oscuro;
+            color: $claro;
+            margin: auto;
+            border-style: solid;
+            text-align: left;
+            border-left: 3px solid #eee;
+            border-right: none;
+            border-bottom: none;
+            border-top: none;
+            font-size: 40px;
+        }
+        .Fecha::placeholder{
+            color: #eee;
+        }
+        .Fecha::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+          }
+          
+    }
+    //Boton de libres a ultima hora
+    .libres{
+        color: white;
+        height: 15vh;
+        width: 10%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        background: $naranja_llama;
+        border-style: none;
+        text-decoration: none;
+    }
+
+    .Seccion_mesas{
+        width: 95vw;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-top: 2px solid white;
+        border-bottom: 2px solid #eee;
+
+        .Tarjeta{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 60vh;
+            margin: 2vh auto ;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            .Imagen{
+                width: 90%;
+                height: 50%;
+                border-radius: 15px;
+                margin: auto;
+                //Para que oculte la imagen y use el border radius
+                overflow: hidden;
+                //Sirve para los menus con barras overflow-x: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .Nombre{
+                width: 90%;
+                height: 10%;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                color: $claro;
+                overflow: hidden;
+                border-top: 1px solid #eee;
+            }
+            //Boton
+            .Reserva_btn{
+                width: 80%;
+                height: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $naranja_llama;
+                color: white;
+                margin: auto;
+
+                border-style: none;
+                border-radius: 15px;
+                border: 1px solid #eee;
+            }
+        }
+    }
+
+}

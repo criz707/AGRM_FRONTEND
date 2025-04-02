@@ -1,0 +1,148 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  width: 0vw;
+  height: 0vh;
+  margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+/*Variables usuario*/
+.reserva_ultima {
+  width: calc(100vw - 17px);
+  min-height: 100vh;
+  height: auto;
+  background: linear-gradient(rgb(255, 199, 0), rgb(255, 92, 0), rgb(0, 82, 93));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+}
+.reserva_ultima .body {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  color: rgb(255, 255, 255);
+  margin: 10vh auto;
+  border-radius: 15px;
+  background: linear-gradient(rgb(255, 92, 0), rgb(255, 0, 0));
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.reserva_ultima .body .header {
+  width: 90%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5vh auto;
+}
+.reserva_ultima .body .header .tiempo {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+}
+.reserva_ultima .body .header .numero_mesa {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+.reserva_ultima .body .plazas {
+  width: 45%;
+  height: auto;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgb(86, 0, 0);
+  border-radius: 15px;
+}
+.reserva_ultima .body .plazas .circle {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 100%;
+  background: rgb(255, 255, 255);
+  margin: 5vh auto;
+}
+.reserva_ultima .body .plazas .titulo {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5vh auto;
+  font-size: 35px;
+}
+.reserva_ultima .body .plazas select {
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  border: 1px solid #eee;
+  background: rgb(53, 53, 53);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin: 5vh auto;
+}
+.reserva_ultima .body .plazas select select {
+  border: 2px solid rgb(97, 97, 97);
+}
+.reserva_ultima .body .plazas select .ok_option {
+  color: rgb(0, 204, 231);
+}
+.reserva_ultima .body .plazas select .no_option {
+  color: rgb(255, 0, 0);
+}
+.reserva_ultima .body .imagen {
+  width: 50%;
+  height: 90vh;
+  margin: 10vh auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5vh auto;
+  flex-wrap: wrap;
+}
+.reserva_ultima .body .imagen img {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 1% auto;
+}
+.reserva_ultima .body .imagen .confirmar {
+  width: 70%;
+  height: 10%;
+  margin: 1% auto;
+  background: rgb(1, 0, 50);
+  color: white;
+  font-size: 25px;
+  border-radius: 15px;
+  border-style: none;
+}
+.reserva_ultima .body .imagen .liberar {
+  width: 70%;
+  height: 10%;
+  margin: 1% auto;
+  background: rgb(255, 0, 0);
+  color: white;
+  font-size: 25px;
+  border-radius: 15px;
+  border-style: none;
+}
+
+/*# sourceMappingURL=Reserva_ultima.css.map */

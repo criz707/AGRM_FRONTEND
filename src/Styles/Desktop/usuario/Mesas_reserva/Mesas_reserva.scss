@@ -1,0 +1,111 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    width: 0vw;
+    height: 0vh;
+    margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+
+$rojo_claro: rgba(255, 0, 0, 1);
+$rojo_oscuro: rgba(86, 0, 0, 1);
+$gris: rgb(97, 97, 97);
+$oscuro: rgb(34, 34, 34);
+$claro: rgb(255, 255, 255);
+$azul_claro: hsl(194, 100%, 50%);
+$azul_oscuro: rgb(0, 82, 93);
+$amarillo_llama:rgba(255, 199, 0, 1);
+$azul_llama: rgba(0, 35, 61, 1);
+$naranja_llama: rgba(255, 92, 0, 1);
+$azul_claro_rc: rgba(0, 194, 255, 1);
+$azul_oscuro_rc: rgba(1, 0, 50, 1);
+$purpura: hsl(241, 72%, 65%);
+
+.mesas_reserva{
+    //Width correcto sin labarra de desplazamiento de la pagina
+    //:D
+    width: calc(100vw - 17px);
+    min-height: 100vh;
+    height: auto;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient($rojo_claro,$oscuro);
+    //Para centrar cosas en un body
+    //Container
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .titulo{
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: $claro;
+        font-size: 20px;
+        border-bottom: 1px solid #eee;
+        margin: auto;
+    }
+
+    .body{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:10vh  auto;
+
+        .target{
+            width: 30%;
+            height: 50vh;
+            margin: 5vh auto;
+            background: linear-gradient($gris,$oscuro);
+            border-radius: 15px;
+            .img{
+                width: 100%;
+                height: 70%;
+                border-radius: 15px;
+                margin: 0 auto;
+                img{
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .new{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-size: 200px;
+                width: 100%;
+                height: 70%;
+                border-radius: 15px;
+                margin: auto;
+                color: $claro;
+            }
+            .info{
+                width: 90%;
+                height: 20%;
+                color: $claro;
+                text-align: left;
+                margin: 5% auto;
+                p{
+                    text-align: center;
+                    width: 100%;
+                    height: 35%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+}

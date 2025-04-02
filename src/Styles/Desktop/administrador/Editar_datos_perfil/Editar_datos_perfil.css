@@ -1,0 +1,106 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  width: 0vw;
+  height: 0vh;
+  margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+.editar_perfil {
+  width: calc(100vw - 17px);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(255, 255, 255));
+}
+.editar_perfil .body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.editar_perfil .body .target {
+  width: 80%;
+  height: 100vh;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(26, 26, 26));
+  margin: 10vh auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.editar_perfil .body .target .datos {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.editar_perfil .body .target .datos label {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 8%;
+  border-bottom: 1px solid #eee;
+  color: white;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.editar_perfil .body .target .datos input {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 8%;
+  border-radius: 15px;
+  color: white;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-style: none;
+}
+.editar_perfil .body .target .datos button {
+  width: 90%;
+  height: 8%;
+  border-radius: 15px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border-style: none;
+  background: hsl(241, 72%, 65%);
+  color: white;
+  margin: 10% auto;
+}
+.editar_perfil .body .target .imagen {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.editar_perfil .body .target .imagen img {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+}
+.editar_perfil .body .target .imagen button {
+  width: 90%;
+  height: 10%;
+  margin: auto auto 5% auto;
+  border-radius: 15px;
+  border-style: none;
+  background: rgb(255, 0, 0);
+  color: white;
+}
+
+/*# sourceMappingURL=Editar_datos_perfil.css.map */

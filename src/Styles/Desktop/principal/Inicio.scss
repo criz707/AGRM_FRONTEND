@@ -1,0 +1,208 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    width: 0vw;
+    height: 0vh;
+    margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+
+
+
+/*Variables usuario*/
+$rojo_claro: rgba(255, 0, 0, 1);
+$rojo_oscuro: rgba(86, 0, 0, 1);
+$gris: rgb(97, 97, 97);
+$oscuro: rgba(53, 53, 53, 1);
+$claro: rgb(255, 255, 255);
+$azul_claro: rgb(0, 204, 231);
+$azul_oscuro: rgb(0, 82, 93);
+$amarillo_llama:rgba(255, 199, 0, 1);
+$azul_llama: rgba(0, 35, 61, 1);
+$naranja_llama: rgba(255, 92, 0, 1);
+$azul_claro_rc: rgba(0, 194, 255, 1);
+$azul_oscuro_rc: rgba(1, 0, 50, 1);
+
+.Container{
+    width: 100vw;
+    height: auto;
+    font-family: "Inter", sans-serif;
+    .Header_i{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background: $oscuro;
+
+        .Logo{
+            width: 10%;
+            height: 90%;
+            border-radius: 20px;
+            margin-left: 2%;
+            background: linear-gradient($rojo_claro,$rojo_oscuro);
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .titulo{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: $claro;
+            width: 25%;
+            height: 90%;
+            font-size: 40px;
+        }
+
+        .Nav{
+            width: 50%;
+            height: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+            margin-right: 2%;
+            //border: 1px solid #eee;
+            .item{
+                display: flex;
+                flex-direction: row;
+                width: 33%;
+                height: 100%;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: auto;
+                text-decoration: none;
+                color: $claro;
+                border-left: 1px solid #eee;
+                border-right: 1px solid #eee;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .Body{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient($rojo_oscuro 50%,rgb(27, 27, 27));
+        position: relative;
+        .Image{
+            width: 45%;
+            height: 60%;
+            display: flex;
+            border-radius: 20%;
+            flex-direction: row;
+            margin: auto auto auto 10%;
+            overflow: hidden;
+            //Sobra del objeto: offset-x offset-y blur-radius spread-radius color
+            box-shadow: 30px 30px 0px 10px rgb(27, 27, 27);
+
+            //Ocultado el objeto debado de otro
+            z-index: 1; /* Elemento más abajo */
+            transform: translateY(25px); /* Ajusta la posición para superponerse */
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .Info{
+            width: 40%;
+            height: 60%;
+            border-radius: 15%;
+            background: rgb(27, 27, 27);
+            color: $claro;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: auto 10% auto auto;
+            overflow: hidden;
+            //Mostrando un objeto encima de otro
+            z-index: 2; /* Elemento más arriba */
+            transform: translateX(-20px); /* Ajusta la posición para superponerse */
+            .titulo{
+                width: 100%;
+                height: 10%;
+            }
+            .info{
+                width: 70%;
+                height: 50%;
+                margin: auto;
+            }
+            .Register{
+                width: 50%;
+                height: 10%;
+                margin: auto;
+                border-radius: 10px;
+                border-style: none;
+                background: $azul_claro;
+                color: $claro;
+            }
+        }
+
+    }
+
+    .Footer{
+        width: 100%;
+        height: 25vh;
+        background: $oscuro;
+        color: $claro;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .imagen{
+            width: 7%;
+            height: 100%;
+            margin: auto auto auto 1%;
+        }
+        .info{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: auto;
+            p{
+                width: 100%;
+                height: 20%;
+                margin: auto;
+                border-bottom: 2px solid #eee;
+            }
+
+        }
+        .Social{
+            margin: auto;
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: flex-start;
+            p{
+                width: 100%;
+                height: 10%;
+                margin: auto;
+                text-align: center;
+                align-items: center;
+            }
+            .item{
+                width: 15%;
+                height: 30%;
+                margin: auto;
+
+            }
+        }
+    }
+}

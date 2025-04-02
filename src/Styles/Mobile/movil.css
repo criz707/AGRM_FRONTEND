@@ -1,0 +1,1015 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  width: 0vw;
+  height: 0vh;
+  margin: 0;
+}
+
+.app {
+  width: 100vw;
+  /*Pagina penalizaciones*/
+  /* Ancho del pc */
+}
+.app .inicio {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.app .inicio .logo {
+  width: 200px;
+  height: 200px;
+  margin: 5% auto;
+  border-radius: 100%;
+  border: 2px solid rgb(255, 0, 0);
+  box-shadow: 0 60px 80px rgba(0, 0, 0, 0.6), 0 45px 26px rgba(0, 0, 0, 0.14);
+}
+.app .inicio .logo img {
+  margin: none;
+  width: 100%;
+  height: 100%;
+}
+.app .inicio .title {
+  display: flex;
+  border-bottom: 2px solid red;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  width: 50vw;
+  height: auto;
+}
+.app .inicio .sesion {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  border-radius: 15px;
+  background: linear-gradient(rgb(255, 0, 0), rgb(86, 0, 0));
+}
+.app .inicio .sesion p {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  margin: 1% auto;
+  width: 90%;
+  height: 10%;
+  vertical-align: middle;
+}
+.app .inicio .sesion input {
+  margin: 1% auto;
+  width: 90%;
+  height: 10%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.app .inicio .sesion button {
+  width: 90%;
+  background: rgb(255, 153, 0);
+  border: none;
+  color: white;
+  height: 15%;
+  box-shadow: 10px;
+  margin: 1% auto;
+  border-radius: 10px;
+}
+.app .mesas {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+}
+.app .mesas .titulo {
+  color: white;
+  flex-direction: row;
+  text-align: center;
+  width: 90%;
+  height: 10%;
+  margin: 5% auto;
+  font-family: "Monserrat", sans-serif;
+  font-size: larger;
+}
+.app .mesas .select {
+  width: 80vw;
+  height: 7vh;
+  border-radius: 5px;
+  margin: auto;
+  flex-direction: row-reverse;
+  position: relative;
+  color: rgb(255, 0, 0);
+  background: linear-gradient();
+}
+.app .mesas .select option {
+  font-family: "Monserrat", sans-serif;
+  background: rgb(53, 53, 53);
+  color: white;
+}
+.app .mesas .mesas {
+  width: 100%;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.app .mesas .mesas .tarjeta {
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  width: 40%;
+  height: 30vh;
+  font-family: "Monserrat", sans-serif;
+  margin: 4%;
+  display: flex;
+  flex-direction: column;
+}
+.app .mesas .mesas .tarjeta .image {
+  width: 80%;
+  height: 70%;
+  margin: auto;
+}
+.app .mesas .mesas .tarjeta .image img {
+  width: 100%;
+  height: 100%;
+}
+.app .mesas .mesas .tarjeta .name {
+  margin: auto;
+  width: 80%;
+  height: 10%;
+  text-align: center;
+}
+.app .mesa {
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+.app .mesa .image {
+  width: 100%;
+  height: 70vw;
+  margin: 0 auto;
+}
+.app .mesa .image img {
+  width: 100%;
+  height: 100%;
+}
+.app .mesa .menu {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+.app .mesa .menu .titulo {
+  width: 100%;
+  height: 50%;
+  color: white;
+  display: flex;
+  margin: auto;
+}
+.app .mesa .menu .titulo p {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 20%;
+  text-align: center;
+  align-items: center;
+  font-size: larger;
+}
+.app .mesa .menu .plazas {
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+}
+.app .mesa .menu .pagar {
+  margin: 1vh auto;
+  width: 90%;
+  height: 10vh;
+  color: white;
+  background: linear-gradient(rgb(255, 0, 0), rgb(86, 0, 0));
+  border: 1px solid rgb(86, 0, 0);
+  border-radius: 10px;
+}
+.app .pago {
+  width: 100vw;
+  height: auto;
+  border: 1px solid black;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53)); /* Aplicar gradiente solo al contenedor principal */
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+.app .pago .title {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Monserrat", sans-serif;
+  background-color: transparent; /* Establecer un fondo transparente */
+}
+.app .pago .mesa {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30vh;
+  color: rgb(255, 255, 255);
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0); /* Fondo sólido transparente para evitar que el gradiente se repita */
+}
+.app .pago .mesa img {
+  width: 35%;
+  height: 80%;
+  margin: auto;
+}
+.app .pago .mesa .datos {
+  width: 50%;
+  height: 70%;
+  margin: auto;
+  text-align: start;
+  justify-content: space-between;
+}
+.app .pago .mesa .datos li {
+  margin: auto;
+  width: 100%;
+  height: 15%;
+}
+.app .pago .metodos {
+  border: 1px solid red;
+  width: 100%;
+  height: 45vh;
+  background-color: rgba(0, 0, 0, 0); /* Fondo sólido transparente para evitar que el gradiente se repita */
+}
+.app .pago .metodos .opciones_pago {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+}
+.app .pago .metodos .opciones_pago .item {
+  width: 30%;
+  height: 15vh;
+  margin: 2.5% auto;
+  border: 1px solid red;
+  display: flex;
+}
+.app .pago .metodos .opciones_pago .item .check {
+  width: 15%;
+  height: 15%;
+  margin: auto 1%;
+  border-radius: 100vb;
+  border: 1px solid red;
+}
+.app .pago .metodos .opciones_pago .item .logo {
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  border: 1px solid rgb(6, 255, 226);
+}
+.app .pago .metodos .opciones_pago .item .logo img {
+  width: 100%;
+  height: 100%;
+}
+.app .pago .areaPago {
+  width: 100%;
+  height: 15vh;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.app .pago .areaPago .boton_pago {
+  width: 50%;
+  height: 90%;
+  margin: auto;
+  border-radius: 15px;
+  color: white;
+  background: linear-gradient(rgb(255, 0, 0), rgb(86, 0, 0));
+  border: none;
+  font-family: "Monserrat", sans-serif;
+  font-size: larger;
+}
+.app .ajustes {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+  display: flex;
+  flex-direction: column;
+}
+.app .ajustes .lista {
+  background-image: url("https://i.ibb.co/Qn9gJLj/liston.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  color: rgb(255, 255, 255);
+  height: 80vh;
+  margin: auto;
+  margin-top: 0;
+}
+.app .ajustes .lista li {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  list-style-type: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  font-size: 20px;
+}
+.app .ajustes .nav_foot {
+  width: 100%;
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid white;
+}
+.app .ajustes .nav_foot .bar {
+  width: 2px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+.app .ajustes .nav_foot .item {
+  width: 15%;
+  margin: auto;
+  height: 90%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+}
+.app .ajustes .nav_foot .item img {
+  width: 80%;
+  height: 80%;
+}
+.app .perfil {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.app .perfil .header {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgb(255, 0, 0), rgb(86, 0, 0));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.app .perfil .header .profile {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.app .perfil .header .profile img {
+  width: 55%;
+  height: 75%;
+  margin: auto;
+}
+.app .perfil .header .profile .titulo {
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid white;
+  font-size: large;
+  font-family: "Monserrat", sans-serif;
+  margin: auto;
+  width: 70%;
+  height: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+}
+.app .perfil .header .mesas {
+  width: 49%;
+  height: 50%;
+  border-top: 3px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+.app .perfil .header .mesas .img {
+  width: 75%;
+  height: 50%;
+  margin: auto;
+}
+.app .perfil .header .mesas .titulo {
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  margin-top: 1%;
+}
+.app .perfil .header .linea {
+  width: 1%;
+  height: 50%;
+  background: rgb(255, 255, 255);
+}
+.app .perfil .header .penalizaciones {
+  border-top: 3px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 50%;
+  color: white;
+  color: rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: transparent;
+  margin: auto;
+}
+.app .perfil .header .penalizaciones .img {
+  width: 75%;
+  height: 50%;
+  margin: auto;
+}
+.app .perfil .header .penalizaciones .titulo {
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  margin-top: 1%;
+}
+.app .perfil .nav_foot {
+  width: 100%;
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+.app .perfil .nav_foot .bar {
+  width: 2px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+.app .perfil .nav_foot .item {
+  width: 15%;
+  margin: auto;
+  height: 90%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+}
+.app .perfil .nav_foot .item img {
+  width: 80%;
+  height: 80%;
+}
+.app .menu {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15vh;
+  background: linear-gradient(rgb(255, 0, 0), rgb(86, 0, 0));
+}
+.app .menu .header {
+  width: 100%;
+  height: 15vh;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.app .menu .header button {
+  color: rgb(255, 255, 255);
+  width: 50%;
+  height: 90%;
+  margin: auto;
+  background: none;
+  border: none;
+}
+.app .menu .header button:hover {
+  background: rgba(255, 255, 255, 0.238);
+}
+.app .menu .header .sep {
+  width: 2px;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+}
+.app .menu .body {
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+.app .menu .body .target {
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 15vh;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+}
+.app .menu .body .target img {
+  width: 35%;
+  height: 100%;
+  margin: auto;
+  margin-left: 0;
+}
+.app .menu .body .target .contenido {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: left;
+  font-family: "Monserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  justify-content: space-around;
+}
+.app .menu .nav_foot {
+  width: 100%;
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+  position: fixed; /* Fijamos la posición del menú */
+  bottom: 0; /* Lo colocamos en la parte superior */
+  left: 0; /* Lo colocamos en la parte izquierda */
+  width: 100%; /* Ancho completo */
+  background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+  z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+  /* Agrega aquí más estilos según tus necesidades */
+}
+.app .menu .nav_foot .bar {
+  width: 2px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+.app .menu .nav_foot .item {
+  width: 15%;
+  margin: auto;
+  height: 90%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+}
+.app .menu .nav_foot .item img {
+  width: 80%;
+  height: 80%;
+}
+.app .mesa_pagina {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(255, 0, 0), rgb(86, 0, 0));
+}
+.app .mesa_pagina .body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 10vh;
+  font-family: "Monserrat", sans-serif;
+}
+.app .mesa_pagina .body .mesa {
+  width: 70%;
+  height: 30%;
+  margin: auto;
+  background: transparent;
+}
+.app .mesa_pagina .body .title {
+  width: 80%;
+  height: 10%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: auto;
+}
+.app .mesa_pagina .body .editar {
+  width: 80%;
+  height: 10%;
+  margin: auto;
+  background: linear-gradient(rgb(0, 204, 231), rgb(0, 82, 93));
+  border: none;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-size: larger;
+}
+.app .mesa_pagina .body .cancelar {
+  width: 80%;
+  height: 10%;
+  margin: auto;
+  border: none;
+  background: linear-gradient(rgb(255, 0, 0), rgb(86, 0, 0));
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-size: larger;
+}
+.app .mesa_pagina .nav_foot {
+  width: 100vw;
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+  position: fixed; /* Fijamos la posición del menú */
+  bottom: 0; /* Lo colocamos en la parte inferior*/
+  left: 0; /* Lo colocamos en la parte izquierda */
+  width: 100%; /* Ancho completo */
+  background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+  z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+  /* Agrega aquí más estilos según tus necesidades */
+}
+.app .mesa_pagina .nav_foot .bar {
+  width: 2px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+.app .mesa_pagina .nav_foot .item {
+  width: 15%;
+  margin: auto;
+  height: 90%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+}
+.app .mesa_pagina .nav_foot .item img {
+  width: 80%;
+  height: 80%;
+}
+.app .ultima_hora {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgb(255, 199, 0) 4%, rgb(255, 92, 0) 40%, rgb(0, 35, 61) 90%);
+}
+.app .ultima_hora .header {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  vertical-align: center;
+  background: rgba(0, 0, 0, 0.271);
+  color: rgb(255, 255, 255);
+}
+.app .ultima_hora .body {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10vh;
+}
+.app .ultima_hora .body .table_target {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  border-bottom: 1px dotted rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.271);
+}
+.app .ultima_hora .body .table_target .imagen {
+  width: 25%;
+  height: 90%;
+  margin: auto;
+}
+.app .ultima_hora .body .table_target .info {
+  margin: auto;
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  justify-content: space-around;
+  color: rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  font-size: small;
+}
+.app .ultima_hora .body .table_target .info .reserva {
+  margin: auto;
+  width: 80%;
+  height: 30%;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 92, 0);
+  border: none;
+  border-radius: 10px;
+  font-size: medium;
+}
+.app .ultima_hora .nav_foot {
+  width: 100vw;
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+  position: fixed; /* Fijamos la posición del menú */
+  bottom: 0; /* Lo colocamos en la parte inferior*/
+  left: 0; /* Lo colocamos en la parte izquierda */
+  width: 100%; /* Ancho completo */
+  background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+  z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+  /* Agrega aquí más estilos según tus necesidades */
+}
+.app .ultima_hora .nav_foot .bar {
+  width: 2px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+.app .ultima_hora .nav_foot .item {
+  width: 15%;
+  margin: auto;
+  height: 90%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+}
+.app .ultima_hora .nav_foot .item img {
+  width: 80%;
+  height: 80%;
+}
+.app .penalizaciones {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgb(255, 0, 0), rgb(86, 0, 0));
+  color: white;
+  font-family: "Monserrat", "sans-serif";
+}
+.app .penalizaciones .header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.app .penalizaciones .body {
+  width: 100%;
+  height: auto;
+  margin: 1% auto;
+  margin-bottom: 10vh;
+}
+.app .penalizaciones .body .Target {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.app .penalizaciones .body .Target .logo {
+  width: 25%;
+  height: 90%;
+  margin: auto;
+}
+.app .penalizaciones .body .Target .info {
+  width: 70%;
+  height: 90%;
+  margin: auto;
+}
+.app .penalizaciones .nav_foot {
+  width: 100vw;
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+  position: fixed; /* Fijamos la posición del menú */
+  bottom: 0; /* Lo colocamos en la parte inferior*/
+  left: 0; /* Lo colocamos en la parte izquierda */
+  width: 100%; /* Ancho completo */
+  background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+  z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+  /* Agrega aquí más estilos según tus necesidades */
+}
+.app .penalizaciones .nav_foot .bar {
+  width: 2px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+.app .penalizaciones .nav_foot .item {
+  width: 15%;
+  margin: auto;
+  height: 90%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+}
+.app .penalizaciones .nav_foot .item img {
+  width: 80%;
+  height: 80%;
+}
+.app .inicio_rc {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(0, 194, 255), rgb(1, 0, 50));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.app .inicio_rc .logo {
+  width: 200px;
+  height: 200px;
+  margin: 5% auto;
+  border-radius: 100%;
+  border: 2px solid rgb(0, 194, 255);
+}
+.app .inicio_rc .logo img {
+  margin: none;
+  width: 100%;
+  height: 100%;
+}
+.app .inicio_rc .title {
+  display: flex;
+  border-bottom: 2px solid rgb(0, 194, 255);
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  width: 50vw;
+  height: auto;
+}
+.app .inicio_rc .sesion {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  border-radius: 15px;
+  background: linear-gradient(rgb(0, 194, 255), transparent);
+}
+.app .inicio_rc .sesion p {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  margin: 1% auto;
+  width: 90%;
+  height: 10%;
+  vertical-align: middle;
+}
+.app .inicio_rc .sesion input {
+  margin: 1% auto;
+  width: 90%;
+  height: 10%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.app .inicio_rc .sesion button {
+  width: 90%;
+  background: rgb(0, 204, 231);
+  border: none;
+  color: white;
+  height: 15%;
+  box-shadow: 10px;
+  margin: 1% auto;
+  border-radius: 10px;
+}
+.app .mesas_rc {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(0, 194, 255), rgb(1, 0, 50));
+  align-items: center;
+  display: flex;
+}
+.app .mesas_rc .body {
+  display: flex;
+  width: 85vw;
+  height: 80vh;
+  flex-wrap: wrap;
+  padding-bottom: 10vh;
+  font-family: "Monserrat", sans-serif;
+  margin: auto;
+  background: linear-gradient(rgb(0, 204, 231), rgba(0, 0, 0, 0));
+  border-radius: 2ch;
+}
+.app .mesas_rc .body .mesa {
+  width: 65%;
+  height: 30%;
+  margin: auto;
+  background: transparent;
+  background: linear-gradient(rgb(0, 194, 255), rgba(0, 0, 0, 0));
+}
+.app .mesas_rc .body .title {
+  width: 80%;
+  height: 10%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: auto;
+}
+.app .mesas_rc .body .editar {
+  width: 80%;
+  height: 10%;
+  margin: auto;
+  background: linear-gradient(rgb(0, 204, 231), rgb(0, 82, 93));
+  border: none;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-size: larger;
+}
+.app .mesas_rc .body .cancelar {
+  width: 80%;
+  height: 10%;
+  margin: auto;
+  border: none;
+  background: linear-gradient(rgb(255, 0, 0), rgb(86, 0, 0));
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-size: larger;
+}
+.app .mesas_rc .nav_foot {
+  width: 100vw;
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  font-family: "Monserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(rgb(97, 97, 97), rgb(53, 53, 53));
+  position: fixed; /* Fijamos la posición del menú */
+  bottom: 0; /* Lo colocamos en la parte inferior*/
+  left: 0; /* Lo colocamos en la parte izquierda */
+  width: 100%; /* Ancho completo */
+  background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+  z-index: 999; /* Ajustamos el z-index para que esté por encima del resto del contenido */
+  /* Agrega aquí más estilos según tus necesidades */
+}
+.app .mesas_rc .nav_foot .bar {
+  width: 2px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+.app .mesas_rc .nav_foot .item {
+  width: 15%;
+  margin: auto;
+  height: 90%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+}
+.app .mesas_rc .nav_foot .item img {
+  width: 80%;
+  height: 80%;
+}
+@media (min-width: 910px) {
+  .app .mesa {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .app .mesa .image {
+    display: flex;
+    width: 50%;
+    margin: auto;
+  }
+  .app .mesa .image img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .app .mesa .menu {
+    width: 50%;
+    height: 80vh;
+    margin: auto;
+  }
+  .app .mesa .menu .titulo {
+    margin: auto;
+  }
+  .app .mesa .menu .plazas {
+    margin: auto;
+  }
+  .app .mesa .menu .pagar {
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=general.css.map */

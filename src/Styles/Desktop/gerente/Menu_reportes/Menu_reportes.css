@@ -1,0 +1,56 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  width: 0vw;
+  height: 0vh;
+  margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+.menu_reportes {
+  width: calc(100vw - 17px);
+  min-height: 100vh;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(255, 255, 255));
+}
+.menu_reportes .body {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.menu_reportes .body .target {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+  border-radius: 15px;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(34, 34, 34));
+}
+.menu_reportes .body .target img {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+.menu_reportes .body .target p {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=Menu_reportes.css.map */

@@ -1,0 +1,121 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  width: 0vw;
+  height: 0vh;
+  margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+.configuraciones_g {
+  width: calc(100vw - 17px);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(255, 255, 255));
+}
+.configuraciones_g .body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  margin: 5vh auto;
+}
+.configuraciones_g .body .target {
+  width: 50%;
+  height: 90%;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(26, 26, 26));
+  margin: auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.configuraciones_g .body .target .datos {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-right: 1px solid #eee;
+  margin: auto;
+}
+.configuraciones_g .body .target .datos p {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: auto;
+  color: white;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.configuraciones_g .body .target .datos button {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 15px;
+  border-style: none;
+  background: hsl(241, 72%, 65%);
+  color: white;
+}
+.configuraciones_g .body .target .imagen {
+  width: 40%;
+  height: 80%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.configuraciones_g .body .target .imagen img {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  border-radius: 20px;
+}
+.configuraciones_g .body .pago {
+  width: 30%;
+  height: 90%;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(26, 26, 26));
+  margin: auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.configuraciones_g .body .pago img {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+.configuraciones_g .body .pago p {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 15%;
+  font-size: 15px;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.configuraciones_g .body .pago .boton {
+  width: 90%;
+  height: 15%;
+  font-size: 15px;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  background: hsl(241, 72%, 65%);
+  border-radius: 15px;
+  border-style: none;
+}
+
+/*# sourceMappingURL=Configuraciones_g.css.map */

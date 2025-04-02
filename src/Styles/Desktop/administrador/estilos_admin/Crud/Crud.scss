@@ -1,0 +1,83 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    width: 0vw;
+    height: 0vh;
+    margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+
+/*Variables usuario*/
+$rojo_claro: rgba(255, 0, 0, 1);
+$rojo_oscuro: rgba(86, 0, 0, 1);
+$gris: rgb(97, 97, 97);
+$oscuro: rgba(53, 53, 53, 1);
+$claro: rgb(255, 255, 255);
+$azul_claro: rgb(0, 204, 231);
+$azul_oscuro: rgb(0, 82, 93);
+$amarillo_llama:rgba(255, 199, 0, 1);
+$azul_llama: rgba(0, 35, 61, 1);
+$naranja_llama: rgba(255, 92, 0, 1);
+$azul_claro_rc: rgba(0, 194, 255, 1);
+$azul_oscuro_rc: rgba(1, 0, 50, 1);
+
+.container{
+    //Width correcto sin labarra de desplazamiento de la pagina
+    //:D
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100vw - 17px);
+    height: auto;
+    background: linear-gradient(#6360FF,#00C2FF);
+    font-family: "Inter", sans-serif;
+
+    .body{
+        width: 100%;
+        height: auto;
+        margin: 10vh auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .target{
+            width: 25%;
+            height: 70vh;
+            margin: 10vh auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            color: $claro;
+            font-size: 25px;
+
+            img{
+                width: 90%;
+                height: 70%;
+            }
+            h3{
+                width: 70%;
+                height: 10%;
+                margin: auto;
+                border-bottom: 1px solid #eee;
+            }
+            button{
+                width: 50%;
+                height: 10%;
+                margin: auto;
+                border: 1px solid #eee;
+                color: $claro;
+                border-radius: 15px;
+                background: linear-gradient(#6360FF,rgb(46, 23, 255));
+                border-style: none;
+                font-size: 15px;
+            }
+
+        }
+    }
+}

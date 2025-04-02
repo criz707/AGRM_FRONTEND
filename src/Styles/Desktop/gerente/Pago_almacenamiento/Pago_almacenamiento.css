@@ -1,0 +1,90 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  width: 0vw;
+  height: 0vh;
+  margin: 0;
+}
+
+/*Fente: font-family: "Inter", sans-serif;*/
+.pago_almacen {
+  width: calc(100vw - 17px);
+  min-height: 100vh;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  background: linear-gradient(hsl(241, 72%, 65%), rgb(255, 255, 255));
+}
+.pago_almacen .body {
+  width: 100%;
+  height: 90vh;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.pago_almacen .body .target {
+  background: linear-gradient(rgb(97, 97, 97), rgb(34, 34, 34));
+  width: 95%;
+  height: 95%;
+  background: linear-gradient(rgb(97, 97, 97), rgb(34, 34, 34));
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 25px;
+}
+.pago_almacen .body .target .imagen {
+  width: 45%;
+  height: 90%;
+  margin: auto;
+}
+.pago_almacen .body .target .imagen img {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+.pago_almacen .body .target .info {
+  width: 50%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+}
+.pago_almacen .body .target .info h3 {
+  width: 90%;
+  height: 10%;
+  text-align: center;
+  margin: auto;
+}
+.pago_almacen .body .target .info img {
+  width: 35%;
+  height: 25%;
+  margin: auto;
+}
+.pago_almacen .body .target .info p {
+  width: 90%;
+  height: 10%;
+  margin: auto;
+}
+.pago_almacen .body .target .info .boton {
+  width: 50%;
+  height: 15%;
+  background: hsl(241, 72%, 65%);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  border-style: none;
+}
+
+/*# sourceMappingURL=Pago_almacenamiento.css.map */
