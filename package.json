@@ -16,7 +16,8 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
     "reactstrap": "^9.2.3",
-    "recharts": "^2.14.1"
+    "recharts": "^2.14.1",
+    "sass": "^1.86.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
