@@ -4,55 +4,56 @@ import '../../Styles/Desktop/gerente/Configuraciones_g/Configuraciones_g.css'
 import { useNavigate } from "react-router-dom"
 import Navbar from "../../components/Navbar"
 
+import { Button } from 'reactstrap'
 
 export const Configuraciones_g = () => {
     const navigate = useNavigate();
-    const goToEditarDatos = () =>{
+    const goToEditarDatos = () => {
         navigate("/gerente/configuraciones_g/cuenta_g")
     }
 
-    const goToPago = () =>{
+    const goToPago = () => {
         navigate("/gerente/configuraciones_g/pago_almacenamiento")
     }
 
-   
-  return (
-    <div className="configuraciones_g">
 
-        <Navbar ajustes={"/gerente/configuraciones_g"} inicio={"/gerente/inicio_g"} notificaciones={"/gerente/notificaciones_g"}/>
+    return (
+        <div className="configuraciones_g">
 
-        <div className="body">
-            <div className="target">
+            <Navbar ajustes={"/gerente/configuraciones_g"} inicio={"/gerente/inicio_g"} notificaciones={"/gerente/notificaciones_g"} />
 
-                {/* Seccion de la informacion */}
+            <div className="body">
+                <div className="target">
 
-                <div className="datos">
-                    <p>Nombre:</p>
-                    <p>Jeremy Renner</p>
-                    <p>Correo:</p>
-                    <p>ronin@gmail.com</p>
-                    <p>Contraseña:</p>
-                    <p>**********</p>
-                    <button onClick={goToEditarDatos}>
-                        Editar perfil
-                    </button>
+                    {/* Seccion de la informacion */}
+
+                    <div className="datos">
+                        <p>Nombre:</p>
+                        <p>Jeremy Renner</p>
+                        <p>Correo:</p>
+                        <p>ronin@gmail.com</p>
+                        <p>Contraseña:</p>
+                        <p>**********</p>
+                        <Button onClick={goToEditarDatos}>
+                            Editar perfil
+                        </Button>
+                    </div>
+
+                    <div className="imagen" >
+                        <img src={gerente} alt="" />
+                    </div>
+
+
                 </div>
 
-                <div className="imagen" >
-                    <img src={gerente} alt="" />
+                <div className="pago">
+                    <img src={factura} alt="" />
+                    <p>Pagar almacenamiento</p>
+                    <Button className="boton" onClick={goToPago}>
+                        Ir a pago
+                    </Button>
                 </div>
-
-
-            </div>
-
-            <div className="pago">
-                <img src={factura} alt="" />
-                <p>Pagar almacenamiento</p>
-                <button className="boton" onClick={goToPago}>
-                    Ir a pago
-                </button>
             </div>
         </div>
-    </div>
-  )
+    )
 }
