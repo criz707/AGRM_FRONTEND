@@ -4,15 +4,17 @@ import '../../Styles/Desktop/gerente/Cuenta_g/Cuenta_g.css'
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 
+import { Button } from "reactstrap"
+
 export const Cuenta_g = () => {
 
     const navigate = useNavigate();
 
-    const goToAlertaExito = () =>{
+    const goToAlertaExito = () => {
         navigate("/gerente/configuraciones_g/cuenta_g/ajustes_exito_g")
     }
 
-    const goToCancelar = () =>{
+    const goToCancelar = () => {
         navigate("/gerente/configuraciones_g")
     }
 
@@ -24,51 +26,51 @@ export const Cuenta_g = () => {
 
         const file = event.target.files[0];
         if (file) {
-          const reader = new FileReader();
-          reader.onload = () => {
-            // Guarda la imagen como una URL base64
-            setImage(reader.result); 
-          };
-          reader.readAsDataURL(file);
+            const reader = new FileReader();
+            reader.onload = () => {
+                // Guarda la imagen como una URL base64
+                setImage(reader.result);
+            };
+            reader.readAsDataURL(file);
         }
-      };
+    };
 
-  return (
-    <div className="editar_perfil">
-        <Volver ruta={"/gerente/configuraciones_g"}/>
-        <div className="body">
-            <div className="target">
+    return (
+        <div className="editar_perfil">
+            <Volver ruta={"/gerente/configuraciones_g"} />
+            <div className="body">
+                <div className="target">
 
-                {/* Seccion de la informacion */}
+                    {/* Seccion de la informacion */}
 
-                <div className="datos">
-                    <label htmlFor="">Nombre:</label>
-                    <input type="text" name="" id="" placeholder="Nombre"/>
-                    <label htmlFor="">Link pago:</label>
-                    <input type="text" name="" id="" placeholder="Link pago"/>
-                    <label htmlFor="">Documento:</label>
-                    <input type="number" name="" id="" placeholder="Nombre"/>
-                    <label htmlFor="">Correo:</label>
-                    <input type="text" name="" id="" placeholder="Nombre"/>
-                    <label htmlFor="">Contraseña:</label>
-                    <input type="password" name="" id="" placeholder="Nombre"/>
-                    <label htmlFor="">Foto</label>
-                    <input type="file" className="input_imagen" id="" placeholder="Nombre" onChange={handleImageChange}/>
-                    <button onClick={goToAlertaExito}>
-                        Guardar
-                    </button>
+                    <div className="datos">
+                        <label htmlFor="">Nombre:</label>
+                        <input type="text" name="" id="" placeholder="Nombre" />
+                        <label htmlFor="">Link pago:</label>
+                        <input type="text" name="" id="" placeholder="Link pago" />
+                        <label htmlFor="">Documento:</label>
+                        <input type="number" name="" id="" placeholder="Nombre" />
+                        <label htmlFor="">Correo:</label>
+                        <input type="text" name="" id="" placeholder="Nombre" />
+                        <label htmlFor="">Contraseña:</label>
+                        <input type="password" name="" id="" placeholder="Nombre" />
+                        <label htmlFor="">Foto</label>
+                        <input type="file" className="input_imagen" id="" placeholder="Nombre" onChange={handleImageChange} />
+                        <Button onClick={goToAlertaExito}>
+                            Guardar
+                        </Button>
+                    </div>
+
+                    <div className="imagen">
+                        <img src={image} alt="" />
+                        <Button onClick={goToCancelar}>Cancelar</Button>
+                    </div>
+
+
+
                 </div>
-
-                <div className="imagen">
-                    <img src={image} alt="" />
-                    <button onClick={goToCancelar}>Cancelar</button>
-                </div>
-
-
-
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
